@@ -4,7 +4,12 @@ import scala.annotation.tailrec
 
 object RootSquareCalculator {
 
- case class Threshold(d: Double)
+  implicit def threshold(d: Double) : Threshold = new Threshold(d)
+
+
+
+  case class Threshold(d: Double)
+
 
  def giveMeRootPls(in: Double)(implicit threshold: Threshold ) = {
 
