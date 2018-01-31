@@ -2,7 +2,7 @@ package example
 
 import example.RootSquareCalculator.{Threshold, giveMeRootPls}
 
-object Hello extends App {
+object RunMePls extends App {
 
   implicit val threshold = new Threshold(0.1)
 
